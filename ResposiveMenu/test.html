@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	
+	<header>
+		<div id="logo"><i class="fa fa-empire"></i></div>
+
+		<div id="bars"><i class="fa fa-bars"></i></div>
+
+		<ul id="nav">
+			<li> <a href="">Hi</a></li>
+			<li> <a href="">Hello</a></li>
+			<li> <a href="">Kia Ora</a></li>
+			<li> <a href="">Bonjour</a></li>
+			<li> <a href="">Ni hao!</a></li>
+		</ul>
+	</header>
+	<main>Main</main>
+	<footer>Footer</footer>
+
+	<script type="text/javascript">
+	var bars = document.querySelector("#bars");
+	var nav = document.querySelector("#nav");
+
+	bars.onclick = function(){
+		if(nav.className == ""){
+			nav.className = "show";
+		}else{
+			nav.className = "";
+		}
+	}
+	</script>
+</body>
+
+</html>

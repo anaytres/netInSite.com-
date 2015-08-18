@@ -1,0 +1,90 @@
+
+/*for mobile - inclusive*/
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header{
+	background-color: rgba(255,0,0,0.1);
+	flex: 0 0 content;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+
+}
+#logo, #bars{
+	flex: 0 0 2em;
+	height: 2em;
+	text-align: center;
+
+}
+#bars i, #logo i{
+	line-height: 2em;
+}
+
+#nav{
+	flex: 0 0 100%;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255,0,0,0.2);
+	overflow: hidden;
+	transition: all 0.5s ease;
+	list-style-type: none;
+}
+
+#nav.show{
+	height: 10em;
+}
+
+#nav li{
+	height: 2em;
+}
+#nav li a{
+	display: block;
+	text-align: center;
+	line-height: 2em;
+}
+
+
+
+main{
+	background-color: rgba(0,0,255,0.1);
+	flex: 1 1 1em ;
+}
+
+footer{
+	background-color: rgba(255,255,0,0.1);
+	flex: 0 0 2em ;
+}
+
+
+/*for phablet - inclusive*/
+@media only screen and (min-width : 24em) {
+
+	#bars{
+		display: none;
+	}
+	#nav{
+
+		flex:1 0 50%;
+		height: 2em;
+		display: flex;
+		justify-content: space-around;
+	}
+
+
+}
+
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : 44em) {
+
+
+
+/*for destop - inclusive*/
+@media only screen and (min-width : 64em) {
+
+}

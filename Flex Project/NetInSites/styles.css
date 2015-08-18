@@ -1,0 +1,190 @@
+/*for mobile - inclusive*/
+.container{
+	display: flex;
+
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+header{
+	/*background-color: rgba(255,0,0,0.5);*/
+	background-color: white;
+	flex: 0 0 content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+main{
+
+	display: block;
+
+}
+
+.bars, .logo{
+	flex: 0 0 2em;
+	height: 3em;
+	text-align: center;
+}
+
+.logo{
+	margin-bottom: 2em;
+}
+
+.bars {
+	line-height: 2em;
+}
+
+#nav{
+	flex: 0 0 100%;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	list-style-type: none;
+}
+#nav.show{
+	height: 10em;
+}
+
+#nav li{
+	height: 2em;
+}
+
+#nav li a{
+	display: block;
+	text-align: center;
+	line-height: 2em;
+	text-decoration: none;
+	color: black;
+}
+
+#nav li a:hover{
+	background-color: #1d2c74;
+	color: white;
+}
+#service1, #service2, #service3, #service4{
+	
+	opacity: 0.5;
+	overflow: hidden;
+	flex: 0 0 content;
+
+}
+
+#service1{
+	background-color: #f7931d;
+}
+
+#service2{
+	background-color: #8CC63E;
+}
+
+#service3{
+	background-color: #653F73;
+}
+
+#service4{
+	background-color: #1B75BB;
+}
+
+#service1:hover, #service2:hover, #service3:hover, #service4:hover{
+	opacity: 1;
+
+}
+
+.homeImg{
+	flex: auto;
+
+}
+.homeImg img{
+
+	max-width: 100%;
+	height: auto;
+
+
+}
+.phrase{
+	flex: 0 0 100%;
+	font-size: 1em;
+}
+
+.title{
+	text-align: center;
+	font-size: 2em;
+	color: #f7931d;
+
+
+
+}
+
+.title:hover{
+	color: #fbaf3f;
+}
+
+.circle{
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+	margin:  1.5em auto;
+ 	display: flex;
+	background-color: white;
+}
+.circle img{
+	width: 7em;
+	height: 7em;
+	margin: auto;
+}
+
+.subTitles{
+	color: white;
+	text-align: center;
+}
+
+
+
+footer{
+	background-color: rgba(255,255,0,0.1);
+	flex: 0 0 2em;
+}
+/*for phablet - inclusive*/
+@media only screen and (min-width : 24em) {
+	
+	main{
+		display: flex;
+		flex-wrap:wrap;
+	
+	}
+	#service1{
+		height: 2em;	
+		flex: 1 0 40%;
+	}
+
+	#service2{
+		height: 2em;
+		flex: 1 0 40%;	
+	}
+
+	#service3{
+		height: 2em;	
+		flex: 1 0 40%;
+	}
+
+	#service4{
+		height: 2em;	
+		flex: 1 0 40%;
+	}
+}
+
+
+/*for tablet - inclusive*/
+@media only screen and (min-width : 44em) {
+	
+}
+
+
+/*for destop - inclusive*/
+@media only screen and (min-width : 64em) {
+
+}
